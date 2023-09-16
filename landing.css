@@ -105,7 +105,7 @@ body {
 }
 
 .product-overview {
-    background-image: url("../images/newheader.jpg");
+    background-image: url("./images/newheader.jpg");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,7 +268,7 @@ body {
 }
 
 .newsletter {
-    background-image: url('../images/pexels-mikhail-nilov-6707512.jpg');
+    background-image: url('./images/pexels-mikhail-nilov-6707512.jpg');
     background-position: center;
     background-size: cover;
     height: 300px;
@@ -461,7 +461,7 @@ hr {
 }
 
 .day-offer__header {
-    background-image: url('../images/ing2.jpg');
+    background-image: url('./images/ing2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
