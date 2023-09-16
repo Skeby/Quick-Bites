@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.top-bar {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 64px;
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.header img {
+    height: 64px;
+}
+
+.card {
+    border-radius: 4px;
+    padding: 8px 24px;
+    flex: 1;
+    position: relative;
+}

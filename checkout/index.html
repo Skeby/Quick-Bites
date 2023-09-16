@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="main-header">
+        <nav class="main-nav">
+            <div>
+                 <a href="../landing/index.html">
+                     <div class="brand-img__container">
+                         <img src="../images/QuickBites_Logo.png" alt="" class="brand-img">
+                     </div>
+                 </a>
+            </div>
+             <ul class="main-nav__items">
+                 <li class="main-nav__item">
+                     <a href="#">HELP</a>
+                 </li>
+                 <li class="main-nav__item">
+                     <a href="#">User Name</a>
+                 </li>
+             </ul>
+         </nav>
+    </div>
+    <main>
+        <div class="body-section">
+            <div class="side-nav">
+                <h2>Delivery Details</h2>
+                <form action="">
+                    <div class="form-element">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email Address">
+                    </div>
+                    <div class="form-element">
+                        <label for="hall">Hall</label>
+                        <input type="text" id="hall" name="hall" placeholder="Hall name">
+                    </div>
+                    <div class="form-element">
+                        <label for="room-number">Room Number</label>
+                        <input type="text" id="room-number" name="room-number" placeholder="Room number">
+                    </div>
+                    <div class="address-check">
+                        <input type="checkbox" id="check" name="check">
+                        <label for="check">Make this my default address</label>
+                        <button type="button">Save Address</button>
+                    </div>
+                </form>
+                <br>
+                <h2>Review Order</h2>
+                <br>
+                <div class="object-section">
+                    <div class="object">
+                        <div class="object-image">
+                            <img src="../images/ingredients.jpg" alt="#">
+                        </div>
+                        <div class="object-description">
+                            <p>Choice Waffles</p>
+                            <p>Regular + 2 Kebabs</p>
+                        </div>
+                        <div class="object-price">
+                            <div class="q-container">
+                                <p>Quantity</p>
+                                <span class="quantity">1</span>
+                            </div>
+                            <p>N<span class="price">1600</span></p>
+                        </div>
+                    </div>
+                    <div class="object">
+                        <div class="object-image">
+                            <img src="../images/ingredients.jpg" alt="#">
+                        </div>
+                        <div class="object-description">
+                            <p>YAMARITA</p>
+                            <p>Regular + 2 Kebabs</p>
+                        </div>
+                        <div class="object-price">
+                            <div class="q-container">
+                                <p>Quantity</p>
+                                <span class="quantity">1</span>
+                            </div>
+                            <p>N<span class="price">1000</span></p>
+                        </div>
+                    </div>
+                    <div class="object">
+                        <div class="object-image">
+                            <img src="../images/ingredients.jpg" alt="#">
+                        </div>
+                        <div class="object-description">
+                            <p>Waffledom</p>
+                            <p>Regular + 2 Kebabs</p>
+                        </div>
+                        <div class="object-price">
+                            <div class="q-container">
+                                <p>Quantity</p>
+                                <span class="quantity">1</span>
+                            </div>
+                            <p>N<span class="price">1600</span></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Delivery Schedule</h2>
+                <br>
+                <form action="">
+                    <div class="schedule">
+                        <input type="radio" name="radio" id="radio-1">
+                        <label for="radio-1">6:15pm - 7:15pm</label>
+                        <input type="radio" name="radio" id="radio-2">
+                        <label for="radio-2">7:15pm - 8:15pm</label>
+                    </div>
+                </form>
+                <br>
+                <h2>Payment Methods</h2>
+                <br>
+                <form action="">
+                    <div class="schedule">
+                        <input type="radio" name="payment" id="p-radio-1">
+                        <label for="p-radio-1">Card</label>
+                        <input type="radio" name="payment" id="p-radio-2">
+                        <label for="p-radio-2">Mobile Wallet</label>
+                        <input type="radio" name="payment" id="p-radio-3">
+                        <label for="p-radio-3">Bank Transfer</label>
+                    </div>
+                </form>
+                <br>
+                <button type="button">Place Order</button>
+            </div>
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <table>
+                    <tr>
+                        <td>Sub total</td>
+                        <td>N4800</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Charges</td>
+                        <td>N480</td>
+                    </tr>
+                    <tr>
+                        <td>Offer discount</td>
+                        <td>N100</td>
+                    </tr>
+                </table>
+                <form action="" id="coupon-form">
+                    <label for="coupon">Coupon discount</label>
+                    <input type="text" id="coupon" name="coupon" placeholder="Enter promo coupon code">
+                    <!-- <button type="button" class="coupon-btn">Apply</button> -->
+                </form>
+                <table>
+                    <tr>
+                        <td>Total Price</td>
+                        <td>N5280</td>
+                    </tr>
+                    <tr>
+                        <td>Total savings</td>
+                        <td>N100</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="main-footer__head">
+            <ul class="main-footer__links">
+                <h2>Quick <span>Bites</span></h2>
+                <p>I'll think of what to put here later</p>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Cuisines</h3>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Quick Links</h3>
+                <li class="main-footer__link"><a href="#">Our Offers</a></li>
+                <li class="main-footer__link"><a href="#">About Us</a></li>
+                <li class="main-footer__link"><a href="#">Reservation</a></li>
+                <li class="main-footer__link"><a href="#">Contact</a></li>
+                <li class="main-footer__link"><a href="#">Help Center</a></li>
+                <li class="main-footer__link"><a href="#">Payment Details</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Contact</h3>
+                <li class="main-footer__link"><a href="#">Base Address</a></li>
+                <li class="main-footer__link"><a href="#">Our Email Address</a></li>
+                <li class="main-footer__link"><a href="#">Telegram Phone Number</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <nav">
+            <ul class="main-footer__links main-footer__custom">
+                <li class="main-footer__link--custom">&copy; 2023 Quick Bites</li>
+                <li class="main-footer__link--custom">Terms &amp; Conditions</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
