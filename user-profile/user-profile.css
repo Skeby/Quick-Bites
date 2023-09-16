@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.main-header {
+    background-color: #00000038;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.brand-img__container {
+    height: 45px;
+}
+
+.brand-img {
+    height: 100%;
+    width: auto;
+}
+
+.main-nav__items {
+    list-style: none;
+}
+
+.main-nav__item {
+    float: left;
+    margin: 0 16px;
+    vertical-align: middle;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.main-nav__item i {
+    margin-right: 10px;
+    color: #cd7f32;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.side-nav {
+    width: fit-content;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.side-nav a {
+    padding: 12px 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    display: block;
+}
+
+.side-nav a i {
+    margin-right: 20px;
+}
+
+.side-nav a:hover {
+    color: #cd7f52;
+}
+
+.dropdown__container {
+    margin-top: 0;
+    display: none;
+    animation: animate 0.5s ease-in;
+}
+
+@keyframes animate {
+    0% { opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+#finance {
+    display: none;
+    animation: fadeEffect 0.4s ease-in;
+}
+
+#password {
+    display: none;
+    animation: fadeEffect 0.4s ease-in;
+}
+
+#email {
+    display: none;
+    animation: fadeEffect 0.4s ease-in;
+}
+
+#order-history {
+    display: none;
+    animation: fadeEffect 0.4s ease-in;
+}
+
+#wallet-history {
+    display: none;
+    animation: fadeEffect 0.4s ease-in;
+}
+
+.dropdown__container a {
+    padding-left: 30px;
+}
+
+.show {
+    display: block;
+}
+
+.main {
+    margin: 50px 0;
+    margin-left: 115px; 
+    font-size: 28px; 
+    padding: 0px 10px;
+    width: fit-content;
+}
+
+.profile {
+    display: none;
+    width: 100%;
+    margin: auto;
+    margin-top: 3%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 32px -7px rgba(0, 0, 0, 0.1);
+    animation: fadeEffect 0.4s ease-in;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-form {
+    margin-top: 30px;
+}
+
+.profile-form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.profile-form input {
+    width: 48%;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1.5px solid #cd7f32;
+}
+
+.profile-form input:focus {
+    outline: none;
+}
+
+.profile-name {
+    display: flex;
+    column-gap: 30px;
+}
+
+.profile-name input {
+    width: 330px;
+}
+
+.tabcontent {
+    width: 100%;
+}
+
+.tabcontent label,
+.tabcontent input,
+.tabcontent button {
+    display: block;
+}
+
+.tabcontent label {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.tabcontent input {
+    margin-top: 15px;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1.5px solid #cd7f32;  
+}
+
+.tabcontent button {
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 15px;
+    background: linear-gradient(to right, #cd7f32, #f65f26);
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 18px;
+    margin-top: 3%;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px 25px;
+}
+
+thead tr {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

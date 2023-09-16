@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Bites - bringing you the best!</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <a href="#" class="main-nav__brand">
+                        <div class="brand-img__container">
+                            <img src="../images/QuickBites_Logo.png" class="brand-img">
+                        </div>
+                    </a>
+                    <div>
+                        <ul class="main-nav__items">
+                            <li class="main-nav__item">
+                                <a href="../cart/index.html">
+                                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                                </a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#">User Name</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="banner-section">
+            <div class="banner">
+                <p class="banner-content">Place Your Order...</p>
+            </div>
+        </section>
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cafeteria</a></li>
+                <li><a href="#"><span id="current-stall"></span></a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="container main-section">
+                <div class="sub-section-1">
+                    <select name="restaurants" id="stalls">
+                        <option value="yam-et-fish">All</option>
+                        <option value="yam-et-fish">yam-et-fish</option>
+                        <option value="Suya">Suya</option>
+                        <option value="Shawarma">Shawarma</option>
+                        <option value="chops">chops</option>
+                        <option value="fruity-life">fruity-life</option>
+                        <option value="kingsway">kingsway</option>
+                        <option value="waffles">waffles</option>
+                        <option value="waffles">waffles</option>
+                        <option value="yamarita">yamarita</option>
+                        <option value="chicken et chipps">chicken et chipps</option>
+                        <option value="boli">boli</option>
+                        <option value="boli">boli</option>
+                        <option value="boli">boli</option>
+                        <option value="foil-pizza-burger">foil-pizza-burger</option>
+                        <option value="6:33-pizza">6:33-pizza</option>
+                        <option value="Shawarma">Shawarma</option>
+                        <option value="other-pizza burger">other-pizza burger</option>
+                    </select>
+                    <div class="menu-container">
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Fried egg</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">100</span></h5>
+                               <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity"> 1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Sausage</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">100</span></h5>
+                               <div class="object-quantity">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Peppered sausage</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">100</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Vanilla Circle</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">250</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Chocolate Circle</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">350</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Strawberry Circle</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">400</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Vanilla Square</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">300</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Chocolate Square</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">350</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="food-display">
+                                <img src="../images/food-a.png" class="w-100 img-fluid">
+                            </div>
+                            <h4>Strawberry Square</h4>
+                            <p>
+                                Your fresh egg <br>
+                                made with low cholestrol oil.
+                            </p>
+                            <div class="order">
+                                <h5>N <span class="price">400</span></h5>
+                                <div class="object-price">
+                                    <button type="button" class="sub">-</button>
+                                    <span class="quantity">1</span>
+                                    <button type="button" class="add">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section-2">
+                    <h3>Mini Cart</h3>
+                    <table>
+                        <tbody id="mini-cart"></tbody>
+                        <a href="../cart/index.html" class="proceed">Proceed to cart</a>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <nav class="main-footer__head">
+            <ul class="main-footer__links">
+                <h2>Quick <span>Bites</span></h2>
+                <p>Follow us on social media to <br>
+                    stay up-to-date on the <br>
+                    latest deals and promotions!</p>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Vendors</h3>
+                <li class="main-footer__link"><a href="#">Shawarma1</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma2</a></li>
+                <li class="main-footer__link"><a href="#">Pizza</a></li>
+                <li class="main-footer__link"><a href="#">Chicken and Chips</a></li>
+                <li class="main-footer__link"><a href="#">Burrito Chicken</a></li>
+                <li class="main-footer__link"><a href="#">Pizza Burger</a></li>
+                <li class="main-footer__link"><a href="#">Delish Yamarita</a></li>
+                <li class="main-footer__link"><a href="#"></a>Boli 1</li>
+                <li class="main-footer__link"><a href="#"></a>Boli 2</li>
+                <li class="main-footer__link"><a href="#"></a>Boli 3</li>
+                <li class="main-footer__link"><a href="#"></a>Yam and Fish</li>
+                <li class="main-footer__link"><a href="#"></a>Pizza Burger 2</li>
+                <li class="main-footer__link"><a href="#"></a>Choice Waffles</li>
+                <li class="main-footer__link"><a href="#"></a>Waffledom</li>
+                <li class="main-footer__link"><a href="#"></a>Kingsway Fruits</li>
+                <li class="main-footer__link"><a href="#"></a>Fruits Outside</li>
+                <li class="main-footer__link"><a href="#"></a>Fruity Life</li>
+                <li class="main-footer__link"><a href="#"></a>Chops and Bites</li>
+                <li class="main-footer__link"><a href="#"></a>Suya guys</li>
+                <li class="main-footer__link"><a href="#"></a>6:33 Pizza</li>
+                <li class="main-footer__link"><a href="#"></a></li>
+                <li class="main-footer__link"><a href="#"></a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Quick Links</h3>
+                <li class="main-footer__link"><a href="#">Our Offers</a></li>
+                <li class="main-footer__link"><a href="#">About Us</a></li>
+                <li class="main-footer__link"><a href="#">Contact</a></li>
+                <li class="main-footer__link"><a href="#">Help Center</a></li>
+                <li class="main-footer__link"><a href="#">Payment Details</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Contact</h3>
+                <li class="main-footer__link"><a href="#">quickbites@gmail.com</a></li>
+                <li class="main-footer__link"><a href="#">Telegram Phone Number</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <nav">
+            <ul class="main-footer__links main-footer__custom">
+                <li class="main-footer__link--custom">&copy; 2023 Quick Bites</li>
+                <li class="main-footer__link--custom">Terms &amp; Conditions</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div id="order">
+                <h4>Place Your Order</h4>
+                <div id="order-container">
+                    <div id="order-header">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p>Waffles made with flour and stuffs <br>
+                            you know no stress my life guy.</p>
+                    </div>
+                    <div id="order-inner">
+                        <label for="shape">SHAPE</label>
+                        <select name="shape" id="shape">
+                            <option value="Circle">Circle</option>
+                            <option value="Square">Square</option>
+                        </select>
+                        <label for="flavor">FLAVOR</label>
+                        <select name="flavor" id="flavor">
+                            <option value="Vanilla">Vanilla</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Strawberry">Strawberry</option>
+                        </select>
+                        <label for="quantity">QUANTITY</label>
+                        <input type="number" id="number" min="0">
+                        <label for="toppings">TOPPINGS</label>
+                        <select name="toppings" id="toppings">
+                            <option value="Egg">Egg</option>
+                            <option value="Sausage">Sausage</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Coleslaw">Coleslaw</option>
+                            <option value="Peppered-sausage">Peppered-sausage</option>
+                        </select>
+                        <label for="t-quantity">QUANTITY</label>
+                        <input type="number" id="t-quantity" min="0">
+                        <label for="syrrup">SYRRUP</label>
+                        <select name="syrrup" id="syrrup">
+                            <option value="Honey">Honey</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Strawberry">Strawberry</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="order-summary">
+                <h4>Order Summary</h4>
+                <table>
+                    <tr>
+                        <td>2 Circles (Vanilla)</td>
+                        <td>N500</td>
+                    </tr>
+                    <tr>
+                        <td>2 Sausages</td>
+                        <td>N200</td>
+                    </tr>
+                    <tr>
+                        <td>2 Eggs</td>
+                        <td>N200</td>
+                    </tr>
+                    <tr>
+                        <td>Strawberry + Honey + Coleslaw</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>900</td>
+                    </tr>
+                </table>
+                <div class="container buttons">
+                    <a href="#">CONTINUE SHOPPING</a>
+                    <a href="#">PROCEED TO CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="dashboard.js"></script> -->
+    <script src="test.js"></script>
+</body>
+</html>

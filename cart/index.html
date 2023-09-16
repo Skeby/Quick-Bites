@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <a href="#" class="main-nav__brand">
+                        <div class="brand-img__container">
+                            <img src="../images/QuickBites_Logo.png" alt="QuickBites_Logo" class="brand-img">
+                        </div>
+                    </a>
+                    <div class="open-time">
+                        <h6>Open now</h6>
+                        <span>10AM - 8PM</span>
+                    </div>
+                    <button class="toggle-button ">
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                    </button>
+                    <div class="main-nav__inner">
+                        <ul class="main-nav__inner--items">
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">Home</a>
+                            </li>
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">About</a>
+                            </li>
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">Contact</a>
+                            </li>
+                            <li class="main-nav__inner--item main-nav__inner--cta">
+                                <a class="main-nav__inner-link" href="#">Mobile waiters</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="cart">
+                <h4>Cart (<span id="cartContent">2</span>)</h4>
+                <hr>
+                <div class="object">
+                    <div class="object-image">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p class="remove"><i class="fa-solid fa-trash-can"></i> Remove</p>
+                    </div>
+                    <div class="object-description">
+                        <p>YAMARITA</p>
+                        <p>Regular + 2 Kebabs</p>
+                    </div>
+                    <div class="object-price">
+                        <p>N<span class="price">1100</span></p>
+                        <button type="button" class="sub">-</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="add">+</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="object">
+                    <div class="object-image">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p class="remove"><i class="fa-solid fa-trash-can"></i> Remove</p>
+                    </div>
+                    <div class="object-description">
+                        <p>Waffles</p>
+                        <p>Regular + 2 Kebabs</p>
+                    </div>
+                    <div class="object-price">
+                        <p>N<span class="price">1200</span></p>
+                        <button type="button" class="sub">-</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="add">+</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="object">
+                    <div class="object-image">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p class="remove"><i class="fa-solid fa-trash-can"></i> Remove</p>
+                    </div>
+                    <div class="object-description">
+                        <p>Chicken</p>
+                        <p>Regular + 2 Kebabs</p>
+                    </div>
+                    <div class="object-price">
+                        <p>N<span class="price">900</span></p>
+                        <button type="button" class="sub">-</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="add">+</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="object">
+                    <div class="object-image">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p class="remove"><i class="fa-solid fa-trash-can"></i> Remove</p>
+                    </div>
+                    <div class="object-description">
+                        <p>Chicken</p>
+                        <p>Regular + 2 Kebabs</p>
+                    </div>
+                    <div class="object-price">
+                        <p>N<span class="price">900</span></p>
+                        <button type="button" class="sub">-</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="add">+</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="object">
+                    <div class="object-image">
+                        <img src="../images/ingredients.jpg" alt="#">
+                        <p class="remove"><i class="fa-solid fa-trash-can"></i> Remove</p>
+                    </div>
+                    <div class="object-description">
+                        <p>Chicken</p>
+                        <p>Regular + 2 Kebabs</p>
+                    </div>
+                    <div class="object-price">
+                        <p>N<span class="price">900</span></p>
+                        <button type="button" class="sub">-</button>
+                        <span class="quantity">1</span>
+                        <button type="button" class="add">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="amount">
+                <h4>CART SUMMARY</h4>
+                <hr>
+                <p>Subtotal &#8358;<span id="totalCartAmount"></span></p>
+                <p>Delivery fee &#8358;<span id="deliveryAmount"></span></p>
+                <hr>
+                <a href="../checkout/index.html" id="checkoutBtn">
+                    CHECKOUT 
+                    <span id="checkoutAmount"></span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <nav class="main-footer__head">
+            <ul class="main-footer__links">
+                <h2>Quick <span>Bites</span></h2>
+                <p>I'll think of what to put here later</p>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Cuisines</h3>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Quick Links</h3>
+                <li class="main-footer__link"><a href="#">Our Offers</a></li>
+                <li class="main-footer__link"><a href="#">About Us</a></li>
+                <li class="main-footer__link"><a href="#">Reservation</a></li>
+                <li class="main-footer__link"><a href="#">Contact</a></li>
+                <li class="main-footer__link"><a href="#">Help Center</a></li>
+                <li class="main-footer__link"><a href="#">Payment Details</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Contact</h3>
+                <li class="main-footer__link"><a href="#">Base Address</a></li>
+                <li class="main-footer__link"><a href="#">Our Email Address</a></li>
+                <li class="main-footer__link"><a href="#">Telegram Phone Number</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <nav">
+            <ul class="main-footer__links main-footer__custom">
+                <li class="main-footer__link--custom">&copy; 2023 Quick Bites</li>
+                <li class="main-footer__link--custom">Terms &amp; Conditions</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- <script src="cart.js"></script> -->
+    <script src="test.js"></script>
+</body>
+</html>

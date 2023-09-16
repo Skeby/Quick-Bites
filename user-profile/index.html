@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-profile</title>
+    <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.css">
+    <link rel="stylesheet" href="user-profile.css">
+</head>
+<body>
+    <div class="main-header">
+        <nav class="main-nav">
+            <div>
+                 <a href="#">
+                     <div class="brand-img__container">
+                         <img src="../images/QuickBites_Logo.png" alt="" class="brand-img">
+                     </div>
+                 </a>
+            </div>
+             <ul class="main-nav__items">
+                 <li class="main-nav__item">
+                     <a href="#">HELP</a>
+                 </li>
+                 <li class="main-nav__item">
+                     <a href="#"><i class="fa-solid fa-user"></i>Oluwakorede Oguntuyo</a>
+                 </li>
+             </ul>
+         </nav>
+    </div>
+    <main>
+        <div class="side-nav">
+            <h3>My Account</h3>
+            <a href="#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            <a href="#" class="account-link" data-section="order-history"><i class="fa-solid fa-cart-shopping"></i>Recent Orders</a>
+            <a href="#" class="active"><i class="fa-solid fa-utensils"></i>Recent Vendors</a>
+            <a href="#" data-section="wallet-history" class="account-link"><i class="fa-solid fa-wallet"></i>Wallet History</a>
+            <a href="#" id="account-settings"><i class="fa-solid fa-gear"></i>Account Settings</a>
+            <div class="dropdown__container">
+                <a href="#" data-section="profile" class="account-link"><i class="fa-solid fa-user"></i>Profile</a>
+                <a href="#" data-section="password" class="account-link"><i class="fa-solid fa-lock"></i>Password</a>
+                <a href="#" data-section="email" class="account-link"><i class="fa-solid fa-envelope"></i>Email</a>
+                <a href="#" data-section="finance" class="account-link"><i class="fa-solid fa-money-bill"></i>Payment</a>
+            </div>
+        </div>
+        <div class="main">
+           <div id="profile" class="profile account-section">
+                <div class="profile-image">
+                    <img src="../images/60111.jpg" alt="#">
+                </div>
+                <div class="profile-form">
+                    <div class="profile-name">
+                        <div class="profile-name__firstname">
+                            <label for="first-name">First Name</label>
+                            <input type="text" value="Oluwakorede" readonly>
+                        </div>
+                        <div class="profile-form__lastname">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" value="Oguntuyo" readonly>
+                        </div>
+                    </div>
+                    <label for="gender">Phone Number</label>
+                    <input type="tel" value="08162341746" readonly>
+                    <label for="gender">Gender</label>
+                    <input type="text" value="Male" readonly>
+                    <label for="email">Email</label>
+                    <input type="email" value="ogisaac57@gmail.com" readonly>
+                    <label for="address">Address</label>
+                    <input type="text" value="Daniel Hall F403" readonly>
+                </div>
+           </div>
+           <div id="finance" class="tabcontent account-section">
+                <!-- <div>
+                    <label for="wallet-balance">Wallet Balance</label>
+                    <input type="text" value="N10000" readonly>
+                    <label for="card">Card(s)</label>
+                    <input type="text" value="**** 2122 MasterCard" readonly>
+                    <button type="button">Remove Card</button>
+                </div> -->
+            </div>
+            <div id="password" class="tabcontent account-section">
+                <label for="password">Current Password</label>
+                <input type="password" value="oluwakorede" readonly>
+                <label for="password">New Password</label>
+                <input type="password" value="oluwakorede" readonly>
+                <label for="password">Confirm Password</label>
+                <input type="password" value="oluwakorede" readonly>
+                <button type="button">Update Password</button>
+            </div>
+            <div id="email" class="tabcontent account-section">
+                <label for="email">Email</label>
+                <input type="email" value="ogisaac57@gmail.com" readonly>
+                <button type="button">Change Email</button>
+            </div>
+            <div id="order-history" class="tabcontent account-section" >
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Quantity</th>
+                            <th>Address</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12th June, 2023.</td>
+                            <td>Lorem ipsum dolor sit lorem</td>
+                            <td>2</td>
+                            <td>Peter Hall F101</td>
+                            <td>N2350</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>12th June, 2023.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>2</td>
+                            <td>Peter Hall F101</td>
+                            <td>N2350</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>12th June, 2023.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>2</td>
+                            <td>Peter Hall F101</td>
+                            <td>N2350</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>12th June, 2023.</td>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>2</td>
+                            <td>Peter Hall F101</td>
+                            <td>N2350</td>
+                            <td>Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="wallet-history" class="tabcontent account-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Payment Mode</th>
+                            <th>Payment ID</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>14th May, 2023.</td>
+                            <td>Bank Transfer</td>
+                            <td>1234-5678-0090</td>
+                            <td>N12000</td>
+                        </tr>
+                        <tr>
+                            <td>14th May, 2023.</td>
+                            <td>Bank Transfer</td>
+                            <td>1234-5678-0090</td>
+                            <td>N12000</td>
+                        </tr>
+                        <tr>
+                            <td>14th May, 2023.</td>
+                            <td>Bank Transfer</td>
+                            <td>1234-5678-0090</td>
+                            <td>N12000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="user-profile.js"></script>
+</body>
+</html>
