@@ -4,117 +4,317 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUICK BITES-BRINGING YOU THE BEST!</title>
-    <link rel="stylesheet" href="shared.css">
+    <title>Quick Bites - Bringing you the best</title>
+     <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../Font-Awesome-6.x/css/all.css">
+     <link rel="stylesheet" href="../RemixIcon-master/RemixIcon-master/fonts/remixicon.css">
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="main-nav main-nav__other">
-            <a href="#" class="main-header__brand">
-                <img src="images/QuickBites_Logo.png" alt="Quick Bites logo">
-            </a>
-            <button class="toggle-button">                
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>       
-                <span class="toggle-button__bar"></span>
-           </button>
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="#">About</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Contact</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Mobile Waiters</a>
-                </li>
-            </ul>
-            <ul class="main-nav__items">
-                <li class="main-nav__item main-nav__item--cta">
-                    <a href="#">Sign up</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#">Login</a>
-                </li>
-            </ul>
-        </nav>
+    <header>
+        <div class="main-header">
+            <div class="container">
+                <nav class="main-nav">
+                    <a href="#" class="main-nav__brand">
+                        <div class="brand-img__container">
+                            <img src="../images/QuickBites_Logo.png" alt="QuickBites_Logo" class="brand-img">
+                        </div>
+                    </a>
+                    <div class="open-time">
+                        <h6>Open now</h6>
+                        <span>10AM - 8PM</span>
+                    </div>
+                    <button class="toggle-button ">
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                        <span class="toggle-button__bar"></span>
+                    </button>
+                    <div class="main-nav__inner">
+                        <ul class="main-nav__inner--items">
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">Home</a>
+                            </li>
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">About</a>
+                            </li>
+                            <li class="main-nav__inner--item">
+                                <a class="main-nav__inner-link" href="#">Contact</a>
+                            </li>
+                            <li class="main-nav__inner--item main-nav__inner--cta">
+                                <a class="main-nav__inner-link" href="#">Mobile Waiters</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-            <li class="mobile-nav__item">
-                <a href="#">About</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#">Contact</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#">Mobile Waiters</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#">Login</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="#">Sign up</a>
-            </li>
-        </ul>
-    </nav>
     <main>
-        <section id="product-overview">
-            <form>
-                <input type="text" id="product-overview__address">
-                <a href="#" id="product-overview__item">Sign in for saved address</a>
-                <button type="button" id="product-overview__btn">GO</button>
-            </form>
-        </section>
-        <section id="activities">
-            <div class="activities-list">
-                <article class="activity">
-                    <div class="activities-list__image">
-                        <img src="images/headerbg2.jpeg" alt="Waiter icon">
+        <section class="product-overview">
+            <div class="bubble">
+                <img src="../images/bubble.png" alt="bubble" class="w-100 img-fluid">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-lg-xl-6">
+                        <div class="product-overview__content">
+                            <h1>Take <strong>Food</strong> 
+                                & 
+                                <strong>Let's</strong> 
+                                <span>Go.</span>
+                            </h1>
+                            <p>Have any food on your mind?
+                                <span>
+                                    <a href="../dashboard-o/index.html">Just order now!</a>
+                                </span>
+                            </p>
+                            <a href="#top-stalls" class="btn menu-btn">Top Vendors <i class="ri ri-arrow-right-double-line"></i></a>
+                        </div>
                     </div>
-                    <div class="activity-description">
-                        <h3 class="activity-title">Become a waiter</h3>
-                        <p class="activity-info">As a mobile waiter, you stand a chance to earn <br>
-                        a lot - while working at your own <br>
-                        convenience</p>
+                    <div class="col-md-6 col-lg-6 col-lg-xl-6">
+                        <div class="burger-img">
+                            <img src="../images/thief.png" alt="burger image" class="w-100 img-fluid">
+                        </div>
                     </div>
-                </article>
-                <article class="activity">
-                    <div class="activities-list__image">
-                        <img src="images/headerbg2.jpeg" alt="Partner icon">
-                    </div>
-                    <div class="activity-description">
-                        <h3 class="activity-title">Become a partner</h3>
-                        <p class="activity-info">Join us in bringing quality <br>
-                        to the door steps of our customers</p>
-                    </div>
-                </article>
+                    <div class="col-lg-6"></div>
+                </div>
             </div>
         </section>
+        <section>
+            <div class="container menu-section">
+                <div class="menu-section__header"> 
+                    <h5>Popular Menu</h5>
+                    <h2>Amazing Food Served <br>
+                        With Delicacy
+                    </h2>
+                </div>
+                <div class="menu-container" id="top-stalls">
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png">
+                        <h4>Pasta</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png">
+                        <h4>Choice Waffles</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png">
+                        <h4>Choice Waffles</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png">
+                        <h4>Choice Waffles</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png" width="150px">
+                        <h4>Choice Waffles</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                    <div class="menu-card">
+                        <div class="food-display">
+                            <img src="../images/food-a.png" class="w-100 img-fluid">
+                        </div>
+                        <img src="../images/rating-a.png">
+                        <h4>Choice Waffles</h4>
+                        <p>
+                            I still need to find <br>
+                            what to fill in thix text
+                        </p>
+                        <h5>N1000</h5>
+                    </div>
+                </div>
+               <div class="btn-menu">
+                <a href="../dashboard-o/index.html" class="btn menu-btn">See All Stalls</a>
+               </div>
+            </div>
+        </section>
+        <section>
+            <div class="curtain-custom"></div>
+            <div class="day-offer__header">
+                <h1>We
+                    <strong>Deliver</strong>
+                    Food 
+                    <strong>Made</strong>
+                    <br>
+                    With 
+                    <strong>the Best</strong>
+                    Ingredients.
+                </h1>
+                <div class="day-offer__description">
+                    <div class="vl"></div>
+                    <div class="day-offer__subtitle">
+                        <p>What the hell will i use to fill us this space <br>
+                            Like Whats up with all these texts you have to use
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="day-offer">
+                <video src="../barbecue.mp4" height="auto" width="100%" autoplay loop controls></video>
+             </div>
+        </section>
+        <section>
+            <div class="container mid-section">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-12 col-xl-6">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6">
+                                <div class="box-how">
+                                    <figure>
+                                        <img src="../images/undraw_select_option_re_u4qn.svg" alt=""
+                                        width="150" height="167" >
+                                    </figure>
+                                    <div class="box-how__description">
+                                        <h3>Easy order</h3>
+                                        <p>Select from the wide range of available meals</p>
+                                    </div>
+                                </div>
+                                <div class="box-how">
+                                    <figure>
+                                        <img src="../images/undraw_on_the_way_re_swjt.svg" alt=""
+                                        width="150" height="167" >
+                                    </figure>
+                                    <div class="box-how__description">
+                                        <h3>Quick delivery</h3>
+                                        <p>Select from the wide range of available meals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6 align-self-center">
+                                <div class="box-how">
+                                    <figure>
+                                        <img src="../images/undraw_pizza_sharing_wxop.svg" alt=""
+                                        width="150" height="167" >
+                                    </figure>
+                                    <div class="box-how__description">
+                                        <h3>Enjoy your meal</h3>
+                                        <p>Select from the wide range of available meals</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-12 col-xl-4 align-self-center order-section">
+                        <h2>Start Ordering now</h2>
+                        <p>The text to fill here is really bothering me. I will use chat to fill in the text at a later time now i just have to ensure that this works properly</p>
+                        <p>I should probably add something here also</p>
+                        <a href="../signup/index.html" class="order-link">Register</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-container">
+            <div class="newsletter">
+                <div class="curtain"></div>
+                <div class="container text-center">
+                    <div class="newsletter-form">
+                        <h2>JOIN OUR NEWSLETTER <br>
+                            TO GET UPDATES ON DISCOUNTS AND NEW DEALS</h2>
+                        <form>
+                            <input type="email" class="newsletter-email">
+                            <button type="button" class="newsletter-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+       </section>
     </main>
     <footer class="main-footer">
         <nav class="main-footer__head">
             <ul class="main-footer__links">
-                <h3>Cuisines</h3>
-                <li class="main-footer__link"><a href="#">Shawarma</a></li>
+                <h2>Quick <span>Bites</span></h2>
+                <p>Follow us on social media to <br>
+                    stay up-to-date on the <br>
+                    latest deals and promotions!</p>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Vendors</h3>
+                <li class="main-footer__link"><a href="#">Shawarma1</a></li>
+                <li class="main-footer__link"><a href="#">Shawarma2</a></li>
                 <li class="main-footer__link"><a href="#">Pizza</a></li>
-                <li class="main-footer__link"><a href="#">Yamarita</a></li>
+                <li class="main-footer__link"><a href="#">Chicken and Chips</a></li>
+                <li class="main-footer__link"><a href="#">Burrito Chicken</a></li>
+                <li class="main-footer__link"><a href="#">Pizza Burger</a></li>
+                <li class="main-footer__link"><a href="#">Delish Yamarita</a></li>
+                <li class="main-footer__link"><a href="#"></a>Boli 1</li>
+                <li class="main-footer__link"><a href="#"></a>Boli 2</li>
+                <li class="main-footer__link"><a href="#"></a>Boli 3</li>
+                <li class="main-footer__link"><a href="#"></a>Yam and Fish</li>
+                <li class="main-footer__link"><a href="#"></a>Pizza Burger 2</li>
+                <li class="main-footer__link"><a href="#"></a>Choice Waffles</li>
+                <li class="main-footer__link"><a href="#"></a>Waffledom</li>
+                <li class="main-footer__link"><a href="#"></a>Kingsway Fruits</li>
+                <li class="main-footer__link"><a href="#"></a>Fruits Outside</li>
+                <li class="main-footer__link"><a href="#"></a>Fruity Life</li>
+                <li class="main-footer__link"><a href="#"></a>Chops and Bites</li>
+                <li class="main-footer__link"><a href="#"></a>Suya guys</li>
+                <li class="main-footer__link"><a href="#"></a>6:33 Pizza</li>
+                <li class="main-footer__link"><a href="#"></a></li>
+                <li class="main-footer__link"><a href="#"></a></li>
             </ul>
             <ul class="main-footer__links">
-                <h3>About Quick Bites</h3>
-                <li class="main-footer__link"><a href="#">Blog</a></li>
-                <li class="main-footer__link"><a href="#">Partners</a></li>
-                <li class="main-footer__link"><a href="#">Waiters</a></li>
-            </ul>
-            <ul class="main-footer__links">
-                <h3>Need help?</h3>
-                <li class="main-footer__link"><a href="#">Contact us</a></li>
+                <h3>Quick Links</h3>
+                <li class="main-footer__link"><a href="#">Our Offers</a></li>
+                <li class="main-footer__link"><a href="#">About Us</a></li>
+                <li class="main-footer__link"><a href="#">Contact</a></li>
                 <li class="main-footer__link"><a href="#">Help Center</a></li>
+                <li class="main-footer__link"><a href="#">Payment Details</a></li>
+            </ul>
+            <ul class="main-footer__links">
+                <h3>Contact</h3>
+                <li class="main-footer__link"><a href="#">quickbites@gmail.com</a></li>
+                <li class="main-footer__link"><a href="#">Telegram Phone Number</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <nav">
+            <ul class="main-footer__links main-footer__custom">
+                <li class="main-footer__link--custom">&copy; 2023 Quick Bites</li>
+                <li class="main-footer__link--custom">Terms &amp; Conditions</li>
             </ul>
         </nav>
     </footer>
-
-    <script src="shared.js"></script>
+    
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="landing.js"></script>
 </body>
 </html>
